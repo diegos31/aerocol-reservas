@@ -1,0 +1,341 @@
+.header {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 8px 0 0;
+  opacity: 0.9;
+}
+
+.selector {
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.selector h2 {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+}
+
+.ruta {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 600;
+}
+
+.campo select {
+  margin-top: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.flecha {
+  font-size: 1.4rem;
+  padding-bottom: 8px;
+}
+
+.selector button {
+  margin-top: 16px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.selector button:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.selector button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.lista {
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+.lista h2 {
+  font-size: 1.1rem;
+}
+
+.lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.mensaje {
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 12px;
+  text-align: center;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  color: #64748b;
+  padding: 16px;
+}
+
+/* ---------- Proyecto final ---------- */
+
+/* F3: "Ordenar por" bajo el botón de intercambiar */
+.orden {
+  margin-top: 16px;
+}
+
+/* F1/F3: la tarjeta ahora es clicable (un <button> dentro del <li>) */
+.tarjeta {
+  margin-bottom: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.tarjeta-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tarjeta-btn:hover {
+  background: #f8fafc;
+}
+
+.tarjeta-btn:focus-visible {
+  outline: 3px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.tarjeta strong {
+  color: #0f766e;
+}
+
+.tarjeta-accion {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.tarjeta.seleccionada {
+  border-color: #0ea5e9;
+  background: #f0f9ff;
+  box-shadow: 0 0 0 2px #0ea5e9;
+}
+
+.tarjeta.seleccionada .tarjeta-btn:hover {
+  background: transparent;
+}
+
+.tarjeta.seleccionada .tarjeta-accion {
+  color: #0369a1;
+  font-weight: 600;
+}
+
+/* F1: formulario de reserva */
+.reserva {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.reserva h2 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+.detalle {
+  margin: 0 0 16px;
+  color: #475569;
+}
+
+.reserva input[type='text'] {
+  margin-top: 6px;
+  padding: 10px;
+  font: inherit;
+  font-weight: 400;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.pasajeros {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.pasajeros button {
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.pasajeros button:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.pasajeros button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pasajeros output {
+  min-width: 1.5em;
+  text-align: center;
+}
+
+.clases {
+  margin: 16px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.clases legend {
+  padding: 0;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.clases label {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.reserva-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.total {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.btn-reservar {
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0f766e;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-reservar:hover:not(:disabled) {
+  background: #115e59;
+}
+
+.btn-reservar:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.reserva input:focus-visible,
+.reserva button:focus-visible,
+.btn-eliminar:focus-visible {
+  outline: 3px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* F2: Mis reservas */
+.reservas {
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+.reservas h2 {
+  font-size: 1.1rem;
+}
+
+.reservas ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.reserva-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.reserva-item p {
+  margin: 2px 0;
+}
+
+.reserva-item small {
+  color: #64748b;
+}
+
+.btn-eliminar {
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #fee2e2;
+}
